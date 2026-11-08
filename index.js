@@ -110,5 +110,6 @@ http.createServer((req, res) => {
     res.end('Bot działa poprawnie.');
 }).listen(PORT, () => {
     console.log(`Serwer nasłuchuje na porcie ${PORT}`);
+    sendTelegramMessage('✅ Test: Bot wystartował i ma połączenie z Telegramem!');
     startBot();
 });
